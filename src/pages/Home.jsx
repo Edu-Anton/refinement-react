@@ -51,7 +51,7 @@ const Home = () => {
           </ul>
         </div>
       </nav>
-      <div className="container banner-cards">
+      <div className="banner-cards container position-absolute">
         <div className="row">
           <div className="col-4">
             <div className="card r-bg-primary">

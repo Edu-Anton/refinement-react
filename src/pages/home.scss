@@ -4,8 +4,12 @@
 
 .banner-cards {
   position: absolute;
-  bottom: -200px;
-  left: 12%; //@error
+  width: 100vw;
+  bottom: -250px;
+  left: 0;
+  right: 0;
+ 
+  // left: 12%; //@error
 }
 
 .r-pt-about {
