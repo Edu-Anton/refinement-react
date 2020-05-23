@@ -1,6 +1,9 @@
 import React from 'react'
 import './home.scss'
 import banner from '../img/banner2.jpg'
+import img_p1 from '../img/p1.jpg'
+import img_p2 from '../img/p2.jpg'
+import img_p3 from '../img/p3.jpg'
 import img_p4 from '../img/p4.jpg'
 import img_p5 from '../img/p5.jpg'
 import img_p6 from '../img/p6.jpg'
@@ -18,9 +21,9 @@ const Home = () => {
     {/* Banner */}
     <div className="position-relative">
       <figure>
-        <img src={banner} alt=""/>
+        <img className="img-fluid w-100 h-auto" src={banner} alt=""/>
       </figure>
-      <nav className="navbar navbar-expand-lg navbar-light container position-absolute fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-dark container position-absolute fixed-top">
         <a className="navbar-brand" href="/">Refinement</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -48,37 +51,47 @@ const Home = () => {
           </ul>
         </div>
       </nav>
-      {/* <div className="position-absolute fixed-top h-100 container">
+      <div className="container banner-cards">
         <div className="row">
-          <nav className="navbar navbar-expand-lg navbar-light px-0">
-            <a className="navbar-brand" href="/">Navbar</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarNav">
-              <ul className="navbar-nav">
-                <li className="nav-item active">
-                  <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">Features</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">Pricing</a>
-                </li>
-                <li className="nav-item">
-                  <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
+          <div className="col-4">
+            <div className="card r-bg-primary">
+              <div className="card-body text-white text-center">
+                <figure>
+                  <img className="img-fluid" src={img_p1} alt=""/>
+                </figure>
+                <h3>Dolor nunc vule</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
+              </div>
             </div>
-          </nav>
+          </div>
+          <div className="col-4">
+            <div className="card r-bg-primary">
+              <div className="card-body text-white text-center">
+                <figure>
+                  <img className="img-fluid" src={img_p2} alt=""/>
+                </figure>
+                <h3>Dolor nunc vule</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
+              </div>
+            </div>
+          </div>
+          <div className="col-4">
+            <div className="card r-bg-primary">
+              <div className="card-body text-white text-center">
+                <figure>
+                  <img className="img-fluid" src={img_p3} alt=""/>
+                </figure>
+                <h3>Dolor nunc vule</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
+              </div>
+            </div>
+          </div>
         </div>
-        <p className="mx-n3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum nobis in soluta provident tempore, aut magnam non atque quis tempora labore vel, voluptates perferendis natus possimus dolorem quidem quisquam?</p>
-      </div> */}
+      </div>
     </div>
 
     {/* About */}
-    <div className="container py-5">
+    <div className="container pb-5 r-pt-about">
       <h2 className="text-center mb-5">About</h2>
       <div className="row">
         <div className="col-6 d-flex mb-4">

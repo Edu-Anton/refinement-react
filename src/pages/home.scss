@@ -1,3 +1,17 @@
+.r-bg-primary {
+  background-color: #ec3475;
+}
+
+.banner-cards {
+  position: absolute;
+  bottom: -200px;
+  left: 12%; //@error
+}
+
+.r-pt-about {
+  padding-top: 250px;
+}
+
 .r-card-text {
   background-color: rgba(31, 82, 125, 0.68);
   position: absolute;
@@ -20,3 +34,4 @@
     background-color: #ec3475;
   }
 }
+
