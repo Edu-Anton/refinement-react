@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../organisms/Navbar'
 import './home.scss'
 import banner from '../img/banner2.jpg'
 import img_p1 from '../img/p1.jpg'
@@ -14,6 +15,8 @@ import img_p7 from '../img/p7.jpg'
 import img_p8 from '../img/p8.jpg'
 import img_p9 from '../img/p9.jpg'
 import img_p10 from '../img/p10.jpg'
+import TitleOne from '../atoms/TitleOne'
+import CardHorizontalFullMedia from '../molecules/CardHorizontalFullMedia'
 
 const Home = () => {
   return (
@@ -23,34 +26,7 @@ const Home = () => {
       <figure>
         <img className="img-fluid w-100 h-auto" src={banner} alt=""/>
       </figure>
-      <nav className="navbar navbar-expand-lg navbar-dark container position-absolute fixed-top">
-        <a className="navbar-brand" href="/">Refinement</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Gallery</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Codes</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar/>
       <div className="banner-cards container position-absolute">
         <div className="row">
           <div className="col-4">
@@ -92,7 +68,7 @@ const Home = () => {
 
     {/* About */}
     <div className="container pb-5 r-pt-about">
-      <h2 className="text-center mb-5">About</h2>
+      <TitleOne>About</TitleOne>
       <div className="row">
         <div className="col-6 d-flex mb-4">
           <p className="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quidem sunt illo cum maiores cumque, sed voluptas molestias? Quas, vitae. Sapiente quos placeat quisquam ipsam?</p> 
@@ -124,7 +100,7 @@ const Home = () => {
     {/* For Student */}
     <div className="bg-light py-5">
       <div className="container">
-        <h2 className="text-center mb-5">For Student</h2>
+        <TitleOne>For Student</TitleOne>
         <div className="row">
           <div className="col-4">
             <div className="card text-center">
@@ -159,39 +135,19 @@ const Home = () => {
     
     {/* New Course */}
     <div className="container py-5">
-      <h2 className="text-center mb-5">New Course</h2>
+      <TitleOne>New Course</TitleOne>
       <div className="row">
         <div className="col-6 mb-4">
-          <div className="card">
-            <figure className="m-0">
-              <img className="w-100" src={img_p7} alt=""/>
-            </figure>
-            <p className="position-absolute r-card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel nihil illum sapiente hic corporis ipsa consectetur facere fugiat explicabo expedita dolorem, maxime, saepe consequuntur eos!</p>
-          </div>
+          <CardHorizontalFullMedia image={img_p7}/>
         </div>
         <div className="col-6 mb-4">
-          <div className="card">
-            <figure className="m-0">
-              <img className="w-100" src={img_p8} alt=""/>
-            </figure>
-            <p className="position-absolute r-card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel nihil illum sapiente hic corporis ipsa consectetur facere fugiat explicabo expedita dolorem, maxime, voluptas eos! Iure.</p>
-          </div>
+          <CardHorizontalFullMedia image={img_p8}/>
         </div>
         <div className="col-6 mb-4">
-          <div className="card">
-            <figure className="m-0">
-              <img className="w-100" src={img_p9} alt=""/>
-            </figure>
-            <p className="position-absolute r-card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. consectetur facere fugiat explicabo expedita dolorem, maxime, saepe consequuntur dolores magnam voluptas eos! Iure.</p>
-          </div>
+          <CardHorizontalFullMedia image={img_p9}/>
         </div>
         <div className="col-6 mb-4">
-          <div className="card">
-            <figure className="m-0">
-              <img className="w-100" src={img_p10} alt=""/>
-            </figure>
-            <p className="position-absolute r-card-text">Lagni vel nihil illum sapiente hic corporis ipsa consectetur facere fugiat explicabo expedita dolorem, maxime, saepe consequuntur dolores magnam voluptas eos! Iure.</p>
-          </div>
+          <CardHorizontalFullMedia image={img_p10}/>
         </div>
         
       </div>

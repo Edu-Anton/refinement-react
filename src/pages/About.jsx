@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../organisms/Navbar'
 import './about.scss'
 import banner from '../img/banner2.jpg'
 import img_a1 from '../img/a1.jpg'
@@ -10,6 +11,8 @@ import img_t1 from '../img/t1.jpg'
 import img_t2 from '../img/t2.jpg'
 import img_t3 from '../img/t3.jpg'
 import img_t4 from '../img/t4.jpg'
+import TitleOne from '../atoms/TitleOne'
+import CardHorizontalFullMedia from '../molecules/CardHorizontalFullMedia'
 
 
 const About = (props) => {
@@ -20,39 +23,12 @@ const About = (props) => {
         <figure>
           <img className="img-fluid w-100 h-auto" src={banner} alt=""/>
         </figure>
-        <nav className="navbar navbar-expand-lg navbar-dark container position-absolute fixed-top">
-          <a className="navbar-brand" href="/">Refinement</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item active">
-                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Services</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Gallery</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Codes</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar/>
         
       </div>
       {/* Who we are */}
       <div className="container py-5 text-center">
-        <h2 className="text-center">Who We Are</h2>
+        <TitleOne>Who We Are</TitleOne>
         <p className="font-weight-bold">ALIQUAM DAPIBUS TINCIDUNT METUS. PRAESENT JUSTO DOLOR, LOBORTIS QUIS, LOBORTIS DIGNISSIM, PULVINAR AC, LOREM. VESTIBULUM SED ANTE. DONEC SAGITTIS EUISMOD PURUS. MAURIS FERMENTUM DICTUM MAGNA.</p>
         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis epellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.Itaque earum rerum hic tenetur Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem dis parturient montes. Duis ultricies pharetra magna.</p>
         <p>lorem Ipsum is simply dummy text of the printing and typesetting industry., Lorem Ipsum dummy text ever since dummy text of the printing and usings 1500s,Duis aute irure dolor in reprehenderit in voluptate velit esse when an,Lorem Ipsum has been the industry's standard dummy text ever since dummy text of the printing and usings 1500s,</p>
@@ -77,7 +53,7 @@ const About = (props) => {
       {/* Why Choose Us */}
       <div className="py-5 bg-light">
         <div className="container">
-          <h2 className="text-center">Why Choose Us</h2>
+          <TitleOne>Why Choose Us</TitleOne>
           <div className="row">
             <div className="col-3">
               <h3>1. Vestibulum Iaculis</h3>
@@ -100,30 +76,20 @@ const About = (props) => {
       </div>
       {/* Certification Program */}
       <div className="container py-5">
-        <h2 className="text-center mb-5"> Certification Program</h2>
+        <TitleOne>Certification Program</TitleOne>
         <div className="row">
           <div className="col-6">
-            <div className="card">
-              <figure className="m-0">
-                <img className="w-100" src={img_p7} alt=""/>
-              </figure>
-              <p className="position-absolute r-card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel nihil illum sapiente hic corporis ipsa consectetur facere fugiat explicabo expedita dolorem, maxime, saepe consequuntur eos!</p>
-            </div>
+            <CardHorizontalFullMedia image={img_p7}/>
           </div>
           <div className="col-6">
-            <div className="card">
-              <figure className="m-0">
-                <img className="w-100" src={img_p8} alt=""/>
-              </figure>
-              <p className="position-absolute r-card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel nihil illum sapiente hic corporis ipsa consectetur facere fugiat explicabo expedita dolorem, maxime, voluptas eos! Iure.</p>
-            </div>
+            <CardHorizontalFullMedia image={img_p8}/>
         </div>
         </div>
       </div>
       {/* Our Leadership */}
       <div>
         <div className="container">
-          <h2 className="text-center">Our Leadership</h2>
+          <TitleOne>Our Leadership</TitleOne>
           <div className="row">
             <div className="col-3">
               <figure>

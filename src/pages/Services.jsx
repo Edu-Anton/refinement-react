@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../organisms/Navbar'
 import banner from '../img/banner2.jpg'
 import img_s1 from '../img/s1.jpg'
 import img_s2 from '../img/s2.jpg'
@@ -7,6 +8,7 @@ import img_s4 from '../img/s4.jpg'
 import img_s5 from '../img/s5.jpg'
 import img_s6 from '../img/s6.jpg'
 import img_s7 from '../img/s7.jpg'
+import TitleOne from '../atoms/TitleOne'
 
 
 const Services = (props) => {
@@ -17,39 +19,12 @@ const Services = (props) => {
       <figure>
         <img className="img-fluid w-100 h-auto" src={banner} alt=""/>
       </figure>
-      <nav className="navbar navbar-expand-lg navbar-dark container position-absolute fixed-top">
-        <a className="navbar-brand" href="/">Refinement</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Gallery</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Codes</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar/>
       
     </div>
     {/* Services */}
     <div className="container py-5">
-      <h2 className="text-center mb-5">Services</h2>
+      <TitleOne>Services</TitleOne>
       <div className="row">
         <div className="col-4">
           <div className="card r-bg-primary">
@@ -89,7 +64,7 @@ const Services = (props) => {
     {/* Features */}
     <div className="bg-gray">
       <div className="container">
-        <h2 className="text-center mb-5">Features</h2>
+        <TitleOne>Features</TitleOne>
         <div className="row">
           <div className="col-3">
             <div className="card text-center p-4">
@@ -128,7 +103,7 @@ const Services = (props) => {
     </div>
     {/* What We Offer */}
     <div className="container py-5">
-      <h2 className="text-center mb-5">What We Offer</h2>
+      <TitleOne>What We Offer</TitleOne>
       <div className="row">
         <div className="col-6 mb-4">
           <div className="d-flex">

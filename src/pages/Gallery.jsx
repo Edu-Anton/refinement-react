@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../organisms/Navbar'
 import banner from '../img/banner2.jpg'
 import img_g1 from '../img/g1.jpg'
 import img_g2 from '../img/g2.jpg'
@@ -21,34 +22,7 @@ const Gallery = (props) => {
       <figure>
         <img className="img-fluid w-100 h-auto" src={banner} alt=""/>
       </figure>
-      <nav className="navbar navbar-expand-lg navbar-dark container position-absolute fixed-top">
-        <a className="navbar-brand" href="/">Refinement</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ml-auto">
-            <li className="nav-item active">
-              <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">About</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Services</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Gallery</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Codes</a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar/>
       
     </div>
     {/* Galllery */}

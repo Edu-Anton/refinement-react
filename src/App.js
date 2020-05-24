@@ -4,15 +4,19 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import { Switch, Route } from 'react-router-dom';
+import Footer from './templates/Footer';
 
 function App() {
   return (
+    <>
     <Switch>
       <Route exact path="/" component={Home}/>
       <Route  path="/about" component={About}/>
       <Route  path="/services" component={Services}/>
       <Route  path="/gallery" component={Gallery}/>
     </Switch>
+    <Footer/>
+    </>
   );
 }
 
