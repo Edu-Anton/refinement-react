@@ -13,6 +13,7 @@ import img_g9 from '../img/g9.jpg'
 import img_g10 from '../img/g10.jpg'
 import img_g11 from '../img/g11.jpg'
 import img_g12 from '../img/g12.jpg'
+import TitleOne from '../atoms/TitleOne'
 
 const Gallery = (props) => {
   return (
@@ -27,7 +28,7 @@ const Gallery = (props) => {
     </div>
     {/* Galllery */}
     <div className="container py-5">
-      <h2 className="text-center mb-5">Gallery</h2>
+      <TitleOne>Gallery</TitleOne>
       <div className="row">
         <div className="col-3 mb-4">
           <img className="w-100" src={img_g1} alt=""/>

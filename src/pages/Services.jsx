@@ -9,7 +9,8 @@ import img_s5 from '../img/s5.jpg'
 import img_s6 from '../img/s6.jpg'
 import img_s7 from '../img/s7.jpg'
 import TitleOne from '../atoms/TitleOne'
-
+import CardVerticalMedia from '../molecules/CardVerticalMedia'
+import TitleThree from '../atoms/TitleThree'
 
 const Services = (props) => {
   return (
@@ -27,39 +28,15 @@ const Services = (props) => {
       <TitleOne>Services</TitleOne>
       <div className="row">
         <div className="col-4">
-          <div className="card r-bg-primary">
-            <div className="card-body text-white text-center">
-              <figure>
-                <img className="img-fluid" src={img_s1} alt=""/>
-              </figure>
-              <h3>Dolor nunc vule</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
-            </div>
-          </div>
+          <CardVerticalMedia image={img_s1} title="Dolor nunc vule"/>
         </div>
         <div className="col-4">
-          <div className="card r-bg-primary">
-            <div className="card-body text-white text-center">
-              <figure>
-                <img className="img-fluid" src={img_s2} alt=""/>
-              </figure>
-              <h3>Dolor nunc vule</h3>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
-            </div>
-          </div>
+          <CardVerticalMedia image={img_s2} title="Dolor nunc vule"/>
         </div>
         <div className="col-4">
-            <div className="card r-bg-primary">
-              <div className="card-body text-white text-center">
-                <figure>
-                  <img className="img-fluid" src={img_s3} alt=""/>
-                </figure>
-                <h3>Dolor nunc vule</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam aperiam eveniet maxime dolores. Accusamus sapiente ipsum quod!</p>
-              </div>
-            </div>
-          </div>
+          <CardVerticalMedia image={img_s3} title="Dolor nunc vule"/>          
         </div>
+      </div>
     </div>
     {/* Features */}
     <div className="bg-gray">
@@ -69,7 +46,7 @@ const Services = (props) => {
           <div className="col-3">
             <div className="card text-center p-4">
               <i>Icon</i>
-              <h3>Sceleris Eget</h3>
+              <TitleThree>Sceleris Eget</TitleThree>
               <hr/>
               <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, lesuada at, neque. Viv eget nibh. Etam cus. Nulla facilisi.</p>
             </div>
@@ -77,7 +54,7 @@ const Services = (props) => {
           <div className="col-3">
             <div className="card text-center p-4">
               <i>Icon</i>
-              <h3>Sceleris Eget</h3>
+              <TitleThree>Sceleris Eget</TitleThree>
               <hr/>
               <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, lesuada at, neque. Viv eget nibh. Etam cus. Nulla facilisi.</p>
             </div>
@@ -85,7 +62,7 @@ const Services = (props) => {
           <div className="col-3">
             <div className="card text-center p-4">
               <i>Icon</i>
-              <h3>Sceleris Eget</h3>
+              <TitleThree>Sceleris Eget</TitleThree>
               <hr/>
               <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, lesuada at, neque. Viv eget nibh. Etam cus. Nulla facilisi.</p>
             </div>
@@ -93,7 +70,7 @@ const Services = (props) => {
           <div className="col-3">
             <div className="card text-center p-4">
               <i>Icon</i>
-              <h3>Sceleris Eget</h3>
+              <TitleThree>Sceleris Eget</TitleThree>
               <hr/>
               <p>Quisque nulla. Vestibulum libero nisl, porta vel, scelerisque eget, lesuada at, neque. Viv eget nibh. Etam cus. Nulla facilisi.</p>
             </div>
@@ -111,7 +88,7 @@ const Services = (props) => {
               <img src={img_s4} alt=""/>
             </figure>
             <div>
-              <h3>Mauris non magna ul</h3>  
+              <TitleThree>Mauris non magna ul</TitleThree>  
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repellat ullam dolorum dolorem qui obcaecati voluptas deserunt placeat? Eos et, nesciuo!</p>
             </div>
           </div>
@@ -122,7 +99,7 @@ const Services = (props) => {
               <img src={img_s5} alt=""/>
             </figure>
             <div>
-              <h3>Mauris non magna ul</h3>  
+              <TitleThree>Mauris non magna ul</TitleThree>  
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repellat ullam dolorum dolorem qui obcaecati voluptas deserunt placeat? Eos et, nesciuo!</p>
             </div>
           </div>
@@ -133,7 +110,7 @@ const Services = (props) => {
               <img src={img_s6} alt=""/>
             </figure>
             <div>
-              <h3>Mauris non magna ul</h3>  
+              <TitleThree>Mauris non magna ul</TitleThree>  
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repellat ullam dolorum dolorem qui obcaecati voluptas deserunt placeat? Eos et, nesciuo!</p>
             </div>
           </div>
@@ -144,7 +121,7 @@ const Services = (props) => {
               <img src={img_s7} alt=""/>
             </figure>
             <div>
-              <h3>Mauris non magna ul</h3>  
+              <TitleThree>Mauris non magna ul</TitleThree>  
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis repellat ullam dolorum dolorem qui obcaecati voluptas deserunt placeat? Eos et, nesciuo!</p>
             </div>
           </div>

@@ -55,19 +55,19 @@ const About = (props) => {
         <div className="container">
           <TitleOne>Why Choose Us</TitleOne>
           <div className="row">
-            <div className="col-3">
+            <div className="col-12 col-md-6 col-xl-3 mb-4">
               <h3>1. Vestibulum Iaculis</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, illum possimus officia earum hic consequatur similique. Rerum impedit voluptatem ipsam maxlores voluptas?</p>
             </div>
-            <div className="col-3">
+            <div className="col-12 col-md-6 col-xl-3 mb-4">
               <h3>2. Mauris Asan Nulla</h3>
               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam, illum possimus officia earum hic consequatur similique. Rerum voluptatem ipsam max. Cumque eius dolores voluptas?</p>
             </div>
-            <div className="col-3">
+            <div className="col-12 col-md-6 col-xl-3 mb-4">
               <h3>3. Faucibus Risus</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius adipisci voluptates reiciendis dolore libero blanditiis aspernatur commodi necessitatibus esse niam non veritatis impedit.</p>
             </div>
-            <div className="col-3">
+            <div className="col-12 col-md-6 col-xl-3 mb-4">
               <h3>4. Mauris Asan Nulla</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequatur cumque hic aliquam excepturi, libero commodi sequi, dolores ex quas quaerat quod. Libero.</p>
             </div>

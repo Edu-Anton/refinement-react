@@ -1,6 +1,16 @@
+.navbar-brand {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
 .nav-link {
-  // display: block;
-  padding: 14px;
+  display: block;
+  padding: 10px 14px !important;
+  font-size: 1.4rem;
+  color: #fff !important;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  transition: all .5s;
 }
 
 .nav-link:hover {
